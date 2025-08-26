@@ -1310,10 +1310,7 @@ body.dark-theme {
     display: none;
   }
 }
-
-/* Responsividade para telas de PC/Notebook */
-
-@media screen and (min-width: 1024px) and (min-height: 708px) and (max-width: 1280px) {
+@media screen and (min-width:1440px) and (min-height:900px) and (max-width:1440px){
   
   h1,p,.btn-start,.demo,.feature-item,.author-info {
    left: 3%;
