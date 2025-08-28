@@ -142,6 +142,12 @@
         if (body.classList.contains("dark-theme")) {
           theme = "dark-theme";
         }
+        if (document.body.classList.contains("dark-theme")) {
+          menuButton.style.backgroundColor = "#111729";
+        }else {
+          menuButton.style.backgroundColor = "#f2f9fe";
+}
+
         localStorage.setItem("theme", theme);
         applyThemeStyles(theme);
       }
@@ -207,7 +213,6 @@
           sun.style.backgroundColor = "transparent";
           logoDark.src = "resources/logo-dark.svg";
           authorInfo.style.color = "#f2f9fe";
-          menuButton.style.backgroundColor = "#111729";
           imgCloser.src = "resources/close-button-white.svg";
           imgMenu.src = "resources/hamburger-button-white.svg";
         } else {
@@ -218,7 +223,7 @@
           sun.style.backgroundColor = "#f2f9fe";
           authorInfo.style.color = "#374151";
           logoDark.src = "resources/logo-light.svg";
-          menuButton.style.backgroundColor = "#f2f9fe";
+         
           imgCloser.src = "resources/close-button.svg";
           imgMenu.src = "resources/hamburger-button.svg";
         }
