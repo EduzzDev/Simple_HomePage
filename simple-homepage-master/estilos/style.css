@@ -164,6 +164,12 @@ p {
 .menu-button {
   display: none;
 }
+.menu-button .light-theme {
+  background-color: #f2f9fe;
+}
+.menu-button .dark-theme {
+  background-color: #111729;
+}
 .closer-menu {
   display: none;
   text-decoration: none;
@@ -400,7 +406,7 @@ body.dark-theme {
     left: 49dvw;
     text-decoration: none;
     border: none;
-    background-color: #f2f9fe;
+    background-color: transparent;
     z-index: 4;
     height: 100%;
   }
@@ -428,7 +434,7 @@ body.dark-theme {
   }
 }
 
-@media screen and (min-width: 400px) and (max-width: 427px) {
+@media screen and (min-width: 420px) and (max-width: 679px) and (max-height: 899px) {
   .logo {
     width: 40dvw;
     position: relative;
@@ -440,8 +446,8 @@ body.dark-theme {
   .hero_img {
     position: relative;
     bottom: 52dvw;
-    left: -1%;
-    width: 100%;
+    left: 1%;
+    width: 98%;
   }
   .feature-item {
     font-size: 14px;
@@ -453,11 +459,11 @@ body.dark-theme {
     left: 7%;
   }
   p {
-    font-size: 6dvw;
+    font-size: 4dvb;
     position: relative;
     width: 90%;
     bottom: -4vw;
-    margin-left: -10%;
+    margin-left: -6dvb;
   }
   span {
     position: relative;
@@ -474,7 +480,7 @@ body.dark-theme {
   .demo {
     position: relative;
     left: 5%;
-    bottom: -8vw;
+    bottom: -7dvb;
     margin-left: 4%;
   }
   .btn-start {
@@ -506,9 +512,9 @@ body.dark-theme {
   .feature-item {
     position: relative;
     padding: 1px;
-    top: 110vw;
-    margin-left: -14dvw;
-    font-size: 4.2vw;
+    top: 58dvb;
+    margin-left: -7dvb;
+    font-size: 3.2dvb;
     margin-right: 20%;
   }
   .done-img {
@@ -521,14 +527,14 @@ body.dark-theme {
     left: 46dvw;
     text-decoration: none;
     border: none;
-    background-color: #f2f9fe;
+    background-color: transparent;
     bottom: 0.5dvw;
     display: flex;
     z-index: 2;
   }
   .author-info {
-    font-size: 18px;
-    top: 35dvw;
+    font-size: 3dvb;
+    top: 32dvb;
     position: relative;
   }
   #img-menu {
@@ -550,7 +556,7 @@ body.dark-theme {
   }
 }
 
-@media screen and (min-width: 280px) and (max-width: 340px) {
+@media screen and (min-width: 280px) and (max-width: 429px) {
   .logo {
     width: 45dvw;
     position: relative;
@@ -591,6 +597,7 @@ body.dark-theme {
     position: relative;
     top: 99vw;
     margin-left: -3%;
+    position: relative;
   }
   .btn-start,
   .demo {
@@ -643,7 +650,7 @@ body.dark-theme {
     top: 0.1dvb;
     text-decoration: none;
     border: none;
-    background-color: #f2f9fe;
+    background-color: transparent;
     z-index: 4;
   }
   .author-info {
@@ -801,7 +808,7 @@ body.dark-theme {
     left: 46dvw;
     text-decoration: none;
     border: none;
-    background-color: #f2f9fe;
+    background-color: transparent;
     bottom: 4dvw;
     display: flex;
     z-index: 2;
@@ -831,7 +838,7 @@ body.dark-theme {
     display: none;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 650px) and (max-height: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 650px) and (min-height: 900px) {
   .logo {
     width: 35dvw;
     position: relative;
@@ -960,7 +967,7 @@ body.dark-theme {
     left: 46dvw;
     text-decoration: none;
     border: none;
-    background-color: #f2f9fe;
+    background-color: transparent;
     bottom: 0.5dvw;
     display: flex;
     z-index: 2;
@@ -993,7 +1000,7 @@ body.dark-theme {
 
 @media screen and (max-width: 800px) and (min-width: 720px) {
   .logo {
-    width: 35dvw;
+    width: 35dvb;
     position: relative;
     right: 8dvb;
     margin-left: 20dvw;
@@ -1041,8 +1048,8 @@ body.dark-theme {
     left: 5%;
     bottom: -12vw;
     margin-left: 4%;
-    height: 10dvw;
-    width: 32dvw;
+    height: 11.2dvw;
+    width: 30dvw;
     font-size: 3.2dvw;
   }
   .btn-start {
@@ -1102,25 +1109,26 @@ body.dark-theme {
   }
   .feature-item {
     position: relative;
-    padding: 1px;
-    top: 58.6dvb;
+    padding: 2px;
+    bottom: 65dvw;
+    margin-top: 5dvw;
     margin-left: -5.2dvw;
-    font-size: 3.3dvw;
+    font-size: 3.8dvw;
     margin-right: 8%;
-    line-height: 26px;
+    line-height: 28px;
     width: 40%;
   }
   .done-img {
     position: relative;
     padding-right: 1dvw;
-    width: 4dvb;
+    width: 5dvw;
   }
   .menu-button {
     display: flex;
     left: 46dvw;
     text-decoration: none;
     border: none;
-    background-color: #f2f9fe;
+    background-color: transparent;
     bottom: 0.5dvw;
     display: flex;
     z-index: 2;
@@ -1280,7 +1288,7 @@ body.dark-theme {
     left: 46dvw;
     text-decoration: none;
     border: none;
-    background-color: #f2f9fe;
+    background-color: transparent;
     bottom: 0.2dvw;
     display: flex;
     z-index: 2;
@@ -1310,10 +1318,178 @@ body.dark-theme {
     display: none;
   }
 }
-@media screen and (min-width:1440px) and (min-height:900px) and (max-width:1440px){
-  
-  h1,p,.btn-start,.demo,.feature-item,.author-info {
-   left: 3%;
+@media screen and (min-width: 801px) and (max-width: 999px) and (min-width: 700px) {
+  .logo {
+    width: 35dvw;
+    position: relative;
+    right: 8dvb;
+    margin-left: 20dvw;
+    margin-right: -10%;
+    top: 18px;
+  }
+  .hero_img {
+    position: relative;
+    bottom: 44dvw;
+    left: 8%;
+    width: 80%;
+  }
+  .feature-item {
+    font-size: 14px;
+    margin-left: 5%;
+  }
+  h1 {
+    font-size: 13dvw;
+    line-height: 16vw;
+    left: 7%;
+  }
+  p {
+    font-size: 4.2dvw;
+    position: relative;
+    width: 95%;
+    bottom: -9vw;
+    margin-left: -3%;
+    line-height: 5dvw;
+  }
+  span {
+    position: relative;
+    margin-left: 6%;
+    top: 80dvw;
+    font-size: 18px;
+    font-size: calc(18px + 1.1dvw);
+  }
+  menu,
+  h1 {
+    position: relative;
+    top: 79vw;
+    margin-left: -3%;
+  }
+  .btn-start,
+  .demo {
+    position: relative;
+    left: 5%;
+    bottom: -12vw;
+    margin-bottom: 8%;
+    margin-left: 4%;
+    height: 9dvw;
+    width: 30dvw;
+    font-size: 26px;
+  }
+  .btn-start {
+    position: relative;
+    left: 1%;
+  }
+  .menu {
+    display: none;
+    position: relative;
+    z-index: 20;
+  }
+  li,
+  nav {
+    font-size: 48px;
+    position: relative;
+    left: 10dvw;
+    top: 16dvw;
+    cursor: pointer;
+    line-height: 76px;
+  }
+  .active {
+    color: #2a4dd0;
+    box-shadow: inset 0 -4px 0 0 #2a4dd0;
+    padding-bottom: 6px;
+    font-size: 5dvw;
+  }
+  li:hover a:hover {
+    color: #2a4dd0;
+    box-shadow: inset 0 -4px 0 0 #2a4dd0;
+    padding-bottom: 6px;
+    font-size: 5vw;
+  }
+  a {
+    color: rgb(17, 23, 41);
+  }
+  .theme-button {
+    display: none;
+    position: relative;
+    top: 15vw;
+    left: 10vw;
+    width: 124px;
+    height: 51px;
+  }
+  #moon {
+    position: relative;
+    right: 4px;
+    width: 44px !important;
+    height: 56px;
+    bottom: 4px;
+  }
+  #sun {
+    width: 44px;
+    height: 44px;
+    position: relative;
+    bottom: 10px;
+    left: 8px;
+  }
+  .feature-item {
+    position: relative;
+    padding: 1px;
+    height: auto;
+    top: 56dvb;
+    margin-left: -4dvw;
+    margin-bottom: 5dvw;
+    font-size: 3vw;
+    margin-right: 10%;
+    line-height: 1;
+  }
+  .done-img {
+    position: relative;
+    padding-right: 1dvw;
+    width: 20%;
+  }
+  .menu-button {
+    display: flex;
+    position: relative;
+    left: 46dvw;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    bottom: 0.2dvw;
+    display: flex;
+    z-index: 2;
+    height: 100%;
+  }
+  .author-info {
+    font-size: calc(22px + 1.5dvw);
+    top: 42dvw;
+    position: relative;
+  }
+  #img-menu {
+    display: flex;
+    bottom: 3.5dvw;
+    left: 40.5dvw;
+    width: 58px;
+    height: 48px;
+  }
+  .closer-menu {
+    left: 85dvw;
+    bottom: 65dvw;
+  }
+  #img-close {
+    width: 80px;
+    height: 80px;
+  }
+  br {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-height: 900px) and (max-width: 1440px) {
+  h1,
+  p,
+  .btn-start,
+  .demo,
+  .feature-item,
+  .author-info {
+    left: 3%;
   }
   .logo {
     left: -2dvw;
@@ -1329,7 +1505,7 @@ body.dark-theme {
     bottom: 33.6dvw;
     left: 3.4%;
   }
-  span{
+  span {
     left: -2.2%;
     top: 5dvw;
   }
@@ -1346,7 +1522,7 @@ body.dark-theme {
     bottom: 31.5dvw;
     margin-right: 4dvw;
   }
-  .theme-button{
+  .theme-button {
     left: 18.5%;
   }
   .feature-item {
@@ -1360,12 +1536,62 @@ body.dark-theme {
     top: -6.5vw;
     font-size: 1.8dvw;
   }
-  
 }
 
-@media screen and (min-width: 1280px) and (min-height: 800px) and (max-width: 1340px) {
-  
+@media screen and (min-width: 1000px) and (max-width: 1280px) and (min-height: 500px) {
+    h1,
+  p,
+  .btn-start,
+  .demo,
+  .feature-item,
+  .author-info {
+    left: 4%;
+  }
   span{
+    left: -0.5%;
+  }
+  h1 {
+    font-size: 6.5dvw;
+    top: 7.5dvb;
+  }
+  p {
+    bottom: 31dvw;
+    font-size: 1.9dvw;
+    width: 60%;
+  }
+  .hero_img {
+    width: 40%;
+    height: 20%;
+    left: 56%;
+  }
+  .theme-button {
+    left:18%
+  }
+  .btn-start,
+  .demo {
+    bottom: 29.5dvw;
+    margin-right: 5%;
+  }
+  .features {
+    bottom: 0;
+  }
+  .feature-item {
+    top: -29dvw;
+    width: 25%;
+    font-size: 1.5dvw;
+    margin-right: 5dvb;
+    margin-left: -3.5dvw;
+  }
+  .author-info {
+    font-size: 1.8dvw;
+    position: relative;
+    bottom: 5.7dvw;
+  }
+}
+
+
+@media screen and (min-width: 1280px) and (min-height: 800px) and (max-width: 1340px) {
+  span {
     top: 6dvw;
     font-size: 1.4vw;
   }
@@ -1384,12 +1610,11 @@ body.dark-theme {
   .demo {
     bottom: 28.5dvw;
   }
-  
+
   .feature-item {
     width: 25%;
     top: 4.8dvw;
     font-size: 1.6dvw;
-    
   }
   .author-info {
     position: relative;
@@ -1418,8 +1643,8 @@ body.dark-theme {
   }
 }
 
-@media screen and (min-width:1366px) and (max-height: 768px) {
-  h1{
+@media screen and (min-width: 1366px) and (max-height: 768px) {
+  h1 {
     top: 7dvw;
   }
   p {
@@ -1430,7 +1655,7 @@ body.dark-theme {
   .demo {
     bottom: 25.2dvw;
   }
-  .features{
+  .features {
     bottom: 23.5dvw;
   }
   .feature-item {
