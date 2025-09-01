@@ -27,7 +27,6 @@
       }
 
       .author-info {
-        font-size:  calc(1dvw + 1.3dvw);
         text-align: center;
         margin-top: -29%;
         color: rgb(55, 65, 81);
@@ -73,9 +72,8 @@
         />
       </button>
       <main>
-
+        
         <span>&#128526; simple way to communicate</span>
-
         <!-- Texto Principal da página -->
         <h1>
           Actions for <br />
@@ -125,6 +123,7 @@
       </div>
     </footer>
     <script>
+      // Trava o menu na opção selecionada
       select = (element) => {
         const links = document.querySelectorAll(".menu li a");
         links.forEach((link) => {
@@ -132,6 +131,7 @@
         });
         element.classList.add("active");
       };
+      // Seleção de elementos
       const main = document.querySelector("main");
       const footer = document.querySelector("footer");
       const imgMenu = document.getElementById("img-menu");
@@ -139,6 +139,7 @@
       const buttonToggle = document.querySelector(".theme-button");
       const buttonLiveDemo = document.querySelector(".demo");
       const heroImg = document.querySelector(".hero_img");
+
       function toggleTheme() {
         const body = document.body;
         body.classList.toggle("dark-theme");
@@ -156,6 +157,7 @@
         localStorage.setItem("theme", theme);
         applyThemeStyles(theme);
       }
+      // Função do menu mobile
       function menu() {
         const menu = document.querySelector(".menu");
         const closerMenu = document.querySelector(".closer-menu");
@@ -172,17 +174,13 @@
         menu.style.flexDirection = "column";
         menu.style.alignItems = "center";
         menu.style.justifyContent = "center";
-
-        if (document.body.classList.contains("dark-theme")) {
-          menuButton.style.backgroundColor = "#111729";
-        } else {
-          menuButton.style.backgroundColor = "#f2f9fe";
-        }
+        menuButton.style.backgroundColor = "#f2f9fe";
 
         main.style.bottom = "350px";
         footer.style.bottom = "340px";
         footer.style.position = "relative";
       }
+      // Função para fechar o menu mobile
       function closerMenu() {
         const imgMenu = document.getElementById("img-menu");
         const menu = document.querySelector(".menu");
@@ -198,7 +196,7 @@
         main.style.zIndex = "1";
         footer.style.bottom = "0";
       }
-
+      // Aplica os estilos do tema
       function applyThemeStyles(theme) {
         let chooseColor = document.querySelectorAll(
           "a, span, h1, p, .demo, .feature-item"
@@ -221,7 +219,7 @@
           imgCloser.src = "resources/close-button-white.svg";
           imgMenu.src = "resources/hamburger-button-white.svg";
         } else {
-          chooseColor.forEach((el) => (el.style.color = "#111729"));
+          chooseColor.forEach((el) => (el.style.color = "#223344"));
           moon.src = "resources/Moon_fill_light.svg";
           moon.style.backgroundColor = "transparent";
           sun.src = "resources/Sun_fill.svg";
@@ -233,7 +231,7 @@
           imgMenu.src = "resources/hamburger-button.svg";
         }
       }
-
+      // Carrega o tema salvo no localStorage
       function loadTheme() {
         const theme = localStorage.getItem("theme");
 
@@ -245,8 +243,9 @@
 
         applyThemeStyles(theme);
       }
-
+      // Evento para carregar o tema ao iniciar a página
       window.addEventListener("DOMContentLoaded", loadTheme);
+
     </script>
   </body>
 </html>
