@@ -463,7 +463,7 @@ body.dark-theme {
     position: relative;
     width: 90%;
     bottom: -4vw;
-    margin-left: -6dvb;
+    margin-left: -6dvw;
   }
   span {
     position: relative;
@@ -556,7 +556,7 @@ body.dark-theme {
   }
 }
 
-@media screen and (min-width: 280px) and (max-width: 429px) {
+@media screen and (min-width: 280px) and (max-width: 427px) {
   .logo {
     width: 45dvw;
     position: relative;
@@ -680,7 +680,7 @@ body.dark-theme {
 
 /* Responsividade para tablets  */
 
-@media screen and (min-width: 680px) and (max-width: 800px) {
+@media screen and (min-width: 600px) and (max-width: 999px) {
   .logo {
     width: 35dvw;
     position: relative;
@@ -695,21 +695,17 @@ body.dark-theme {
     left: 8%;
     width: 80%;
   }
-  .feature-item {
-    font-size: 14px;
-    margin-left: 5%;
-  }
   h1 {
     font-size: 13dvw;
     line-height: 16vw;
     left: 7%;
   }
   p {
-    font-size: 4.2dvw;
+    font-size: 4.5dvw;
     position: relative;
     width: 95%;
-    bottom: -9vw;
-    margin-left: -3%;
+    bottom: -8dvw;
+    margin-left: -6dvw;
     line-height: 5dvw;
   }
   span {
@@ -730,9 +726,9 @@ body.dark-theme {
     left: 5%;
     bottom: -12vw;
     margin-left: 4%;
-    height: 8dvw;
-    width: 30dvw;
-    font-size: 18px;
+    height: 12dvw;
+    width: 38dvw;
+    font-size: calc(2px + 3dvw);
   }
   .btn-start {
     position: relative;
@@ -790,12 +786,13 @@ body.dark-theme {
     left: 8px;
   }
   .feature-item {
+    width: 50%;
     position: relative;
     padding: 1px;
-    top: 59dvb;
-    margin-left: -6dvw;
-    font-size: 3vw;
-    margin-right: 10%;
+    top: 60dvb;
+    margin-left: -8.2dvw;
+    font-size: calc(12px + 1.5dvw);
+    margin-right: 10dvw;
     line-height: 1;
   }
   .done-img {
@@ -815,172 +812,14 @@ body.dark-theme {
     height: 100%;
   }
   .author-info {
-    font-size: 20px;
-    top: 42dvw;
+    font-size: calc(12px + 1.5dvw);
+    top: 38dvw;
+    width: 90%;
     position: relative;
   }
   #img-menu {
     display: flex;
     bottom: 45%;
-    left: 40.5dvw;
-    width: 58px;
-    height: 48px;
-  }
-  .closer-menu {
-    left: 85dvw;
-    bottom: 65dvw;
-  }
-  #img-close {
-    width: 80px;
-    height: 80px;
-  }
-  br {
-    display: none;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 650px) and (min-height: 900px) {
-  .logo {
-    width: 35dvw;
-    position: relative;
-    right: 8dvb;
-    margin-left: 20dvw;
-    margin-right: -10%;
-    top: 18px;
-  }
-  .hero_img {
-    position: relative;
-    bottom: 44dvw;
-    left: 8%;
-    width: 80%;
-  }
-  .feature-item {
-    font-size: 14px;
-    margin-left: 5%;
-  }
-  h1 {
-    font-size: 13dvw;
-    line-height: 16vw;
-    left: 7%;
-  }
-  p {
-    font-size: 4.5dvw;
-    position: relative;
-    width: 95%;
-    bottom: -9vw;
-    margin-left: -5.5%;
-    line-height: 5dvw;
-  }
-  span {
-    position: relative;
-    margin-left: 6%;
-    top: 80dvw;
-    font-size: 18px;
-  }
-  menu,
-  h1 {
-    position: relative;
-    top: 79vw;
-    margin-left: -3%;
-  }
-  .btn-start,
-  .demo {
-    position: relative;
-    left: 5%;
-    bottom: -12vw;
-    margin-left: 4%;
-    height: 10dvw;
-    width: 30dvw;
-    font-size: 20px;
-  }
-  .btn-start {
-    position: relative;
-    left: 1%;
-  }
-  .menu {
-    display: none;
-    position: relative;
-    z-index: 20;
-  }
-  li,
-  nav {
-    font-size: 48px;
-    position: relative;
-    left: 10dvw;
-    top: 16dvw;
-    cursor: pointer;
-    line-height: 76px;
-  }
-  .active {
-    color: #2a4dd0;
-    box-shadow: inset 0 -4px 0 0 #2a4dd0;
-    padding-bottom: 6px;
-    font-size: 5dvw;
-  }
-  li:hover a:hover {
-    color: #2a4dd0;
-    box-shadow: inset 0 -4px 0 0 #2a4dd0;
-    padding-bottom: 6px;
-    font-size: 5vw;
-  }
-  a {
-    color: rgb(17, 23, 41);
-  }
-  .theme-button {
-    display: none;
-    position: relative;
-    top: 15vw;
-    left: 10vw;
-    width: 124px;
-    height: 51px;
-  }
-  #moon {
-    position: relative;
-    right: 4px;
-    width: 44px !important;
-    height: 56px;
-    bottom: 4px;
-  }
-  #sun {
-    width: 44px;
-    height: 44px;
-    position: relative;
-    bottom: 10px;
-    left: 8px;
-  }
-  .feature-item {
-    position: relative;
-    padding: 1px;
-    top: 59dvb;
-    margin-left: -8dvw;
-    font-size: 3.5vw;
-    margin-right: 10%;
-    line-height: 1;
-    width: 40%;
-  }
-  .done-img {
-    position: relative;
-    padding-right: 1dvw;
-  }
-  .menu-button {
-    display: flex;
-    position: relative;
-    left: 46dvw;
-    text-decoration: none;
-    border: none;
-    background-color: transparent;
-    bottom: 0.5dvw;
-    display: flex;
-    z-index: 2;
-    height: 100%;
-  }
-  .author-info {
-    font-size: 24px;
-    top: 42dvw;
-    position: relative;
-  }
-  #img-menu {
-    display: flex;
-    bottom: 4.5dvw;
     left: 40.5dvw;
     width: 58px;
     height: 48px;
@@ -998,167 +837,6 @@ body.dark-theme {
   }
 }
 
-@media screen and (max-width: 800px) and (min-width: 720px) {
-  .logo {
-    width: 35dvb;
-    position: relative;
-    right: 8dvb;
-    margin-left: 20dvw;
-    margin-right: -10%;
-    top: 18px;
-  }
-  .hero_img {
-    position: relative;
-    bottom: 44dvw;
-    left: 8%;
-    width: 80%;
-  }
-  .feature-item {
-    font-size: 14px;
-    margin-left: 5%;
-  }
-  h1 {
-    font-size: 13dvw;
-    line-height: 16vw;
-    left: 7%;
-  }
-  p {
-    font-size: 4.2dvw;
-    position: relative;
-    width: 95%;
-    bottom: -9vw;
-    margin-left: -3.5%;
-    line-height: 5dvw;
-  }
-  span {
-    position: relative;
-    margin-left: 6.8%;
-    top: 80dvw;
-    font-size: 22px;
-  }
-  menu,
-  h1 {
-    position: relative;
-    top: 79vw;
-    margin-left: -3%;
-  }
-  .btn-start,
-  .demo {
-    position: relative;
-    left: 5%;
-    bottom: -12vw;
-    margin-left: 4%;
-    height: 11.2dvw;
-    width: 30dvw;
-    font-size: 3.2dvw;
-  }
-  .btn-start {
-    position: relative;
-    left: 1%;
-  }
-  .menu {
-    display: none;
-    position: relative;
-    z-index: 20;
-  }
-  li,
-  nav {
-    font-size: 48px;
-    position: relative;
-    left: 10dvw;
-    top: 16dvw;
-    cursor: pointer;
-    line-height: 76px;
-  }
-  .active {
-    color: #2a4dd0;
-    box-shadow: inset 0 -4px 0 0 #2a4dd0;
-    padding-bottom: 6px;
-    font-size: 5dvw;
-  }
-  li:hover a:hover {
-    color: #2a4dd0;
-    box-shadow: inset 0 -4px 0 0 #2a4dd0;
-    padding-bottom: 6px;
-    font-size: 5vw;
-  }
-  a {
-    color: rgb(17, 23, 41);
-  }
-  .theme-button {
-    display: none;
-    position: relative;
-    top: 15vw;
-    left: 10vw;
-    width: 124px;
-    height: 51px;
-  }
-  #moon {
-    position: relative;
-    right: 4px;
-    width: 44px !important;
-    height: 56px;
-    bottom: 4px;
-  }
-  #sun {
-    width: 44px;
-    height: 44px;
-    position: relative;
-    bottom: 10px;
-    left: 8px;
-  }
-  .feature-item {
-    position: relative;
-    padding: 2px;
-    bottom: 65dvw;
-    margin-top: 5dvw;
-    margin-left: -5.2dvw;
-    font-size: 3.8dvw;
-    margin-right: 8%;
-    line-height: 28px;
-    width: 40%;
-  }
-  .done-img {
-    position: relative;
-    padding-right: 1dvw;
-    width: 5dvw;
-  }
-  .menu-button {
-    display: flex;
-    left: 46dvw;
-    text-decoration: none;
-    border: none;
-    background-color: transparent;
-    bottom: 0.5dvw;
-    display: flex;
-    z-index: 2;
-    height: 100%;
-  }
-  .author-info {
-    font-size: 28px;
-    top: 42dvw;
-    position: relative;
-  }
-  #img-menu {
-    display: flex;
-    bottom: 4dvw;
-    left: 41.5dvw;
-    width: 58px;
-    height: 48px;
-  }
-  .closer-menu {
-    left: 85dvw;
-    bottom: 65dvw;
-  }
-  #img-close {
-    width: 10vw;
-    height: 80px;
-    display: block;
-  }
-  br {
-    display: none;
-  }
-}
 @media screen and (min-width: 900px) and (min-height: 1400px) {
   .logo {
     width: 35dvw;
@@ -1318,228 +996,9 @@ body.dark-theme {
     display: none;
   }
 }
-@media screen and (min-width: 801px) and (max-width: 999px) and (min-width: 700px) {
-  .logo {
-    width: 35dvw;
-    position: relative;
-    right: 8dvb;
-    margin-left: 20dvw;
-    margin-right: -10%;
-    top: 18px;
-  }
-  .hero_img {
-    position: relative;
-    bottom: 44dvw;
-    left: 8%;
-    width: 80%;
-  }
-  .feature-item {
-    font-size: 14px;
-    margin-left: 5%;
-  }
-  h1 {
-    font-size: 13dvw;
-    line-height: 16vw;
-    left: 7%;
-  }
-  p {
-    font-size: 4.2dvw;
-    position: relative;
-    width: 95%;
-    bottom: -9vw;
-    margin-left: -3%;
-    line-height: 5dvw;
-  }
-  span {
-    position: relative;
-    margin-left: 6%;
-    top: 80dvw;
-    font-size: 18px;
-    font-size: calc(18px + 1.1dvw);
-  }
-  menu,
-  h1 {
-    position: relative;
-    top: 79vw;
-    margin-left: -3%;
-  }
-  .btn-start,
-  .demo {
-    position: relative;
-    left: 5%;
-    bottom: -12vw;
-    margin-bottom: 8%;
-    margin-left: 4%;
-    height: 9dvw;
-    width: 30dvw;
-    font-size: 26px;
-  }
-  .btn-start {
-    position: relative;
-    left: 1%;
-  }
-  .menu {
-    display: none;
-    position: relative;
-    z-index: 20;
-  }
-  li,
-  nav {
-    font-size: 48px;
-    position: relative;
-    left: 10dvw;
-    top: 16dvw;
-    cursor: pointer;
-    line-height: 76px;
-  }
-  .active {
-    color: #2a4dd0;
-    box-shadow: inset 0 -4px 0 0 #2a4dd0;
-    padding-bottom: 6px;
-    font-size: 5dvw;
-  }
-  li:hover a:hover {
-    color: #2a4dd0;
-    box-shadow: inset 0 -4px 0 0 #2a4dd0;
-    padding-bottom: 6px;
-    font-size: 5vw;
-  }
-  a {
-    color: rgb(17, 23, 41);
-  }
-  .theme-button {
-    display: none;
-    position: relative;
-    top: 15vw;
-    left: 10vw;
-    width: 124px;
-    height: 51px;
-  }
-  #moon {
-    position: relative;
-    right: 4px;
-    width: 44px !important;
-    height: 56px;
-    bottom: 4px;
-  }
-  #sun {
-    width: 44px;
-    height: 44px;
-    position: relative;
-    bottom: 10px;
-    left: 8px;
-  }
-  .feature-item {
-    position: relative;
-    padding: 1px;
-    height: auto;
-    top: 56dvb;
-    margin-left: -4dvw;
-    margin-bottom: 5dvw;
-    font-size: 3vw;
-    margin-right: 10%;
-    line-height: 1;
-  }
-  .done-img {
-    position: relative;
-    padding-right: 1dvw;
-    width: 20%;
-  }
-  .menu-button {
-    display: flex;
-    position: relative;
-    left: 46dvw;
-    text-decoration: none;
-    border: none;
-    background-color: transparent;
-    bottom: 0.2dvw;
-    display: flex;
-    z-index: 2;
-    height: 100%;
-  }
-  .author-info {
-    font-size: calc(22px + 1.5dvw);
-    top: 42dvw;
-    position: relative;
-  }
-  #img-menu {
-    display: flex;
-    bottom: 3.5dvw;
-    left: 40.5dvw;
-    width: 58px;
-    height: 48px;
-  }
-  .closer-menu {
-    left: 85dvw;
-    bottom: 65dvw;
-  }
-  #img-close {
-    width: 80px;
-    height: 80px;
-  }
-  br {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1440px) and (min-height: 900px) and (max-width: 1440px) {
+/* Responsividade para desktops  */
+@media screen and (min-width: 1000px) and (min-height: 680px) {
   h1,
-  p,
-  .btn-start,
-  .demo,
-  .feature-item,
-  .author-info {
-    left: 3%;
-  }
-  .logo {
-    left: -2dvw;
-    top: 2.4dvw;
-  }
-  h1 {
-    font-size: 6.5dvw;
-    top: 7.5dvb;
-  }
-  p {
-    font-size: 2.3dvb;
-    width: 70%;
-    bottom: 33.6dvw;
-    left: 3.4%;
-  }
-  span {
-    left: -2.2%;
-    top: 5dvw;
-  }
-  li {
-    position: relative;
-    left: 6.5%;
-  }
-  .hero_img {
-    width: 45%;
-    left: 53%;
-  }
-  .btn-start,
-  .demo {
-    bottom: 31.5dvw;
-    margin-right: 4dvw;
-  }
-  .theme-button {
-    left: 18.5%;
-  }
-  .feature-item {
-    top: 7.5dvw;
-    font-size: 1.5dvw;
-    margin-right: 1dvw;
-    left: 2%;
-  }
-  .author-info {
-    position: relative;
-    top: -6.5vw;
-    font-size: 1.8dvw;
-  }
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1280px) and (min-height: 500px) {
-    h1,
   p,
   .btn-start,
   .demo,
@@ -1547,155 +1006,65 @@ body.dark-theme {
   .author-info {
     left: 4%;
   }
-  span{
+  span {
     left: -0.5%;
+    font-size: calc(4px + 1.2dvw);
   }
   h1 {
-    font-size: 6.5dvw;
-    top: 7.5dvb;
+    font-size: 7.3dvw;
+    top: 9.5dvb;
+    width: 50%;
+    line-height: 110px;
   }
   p {
-    bottom: 31dvw;
-    font-size: 1.9dvw;
+    bottom: 28dvw;
+    font-size: 2.2dvw;
     width: 60%;
+    line-height: 37px;
+    word-spacing: 1px;
+  }
+  br {
+    display: none;
+  }
+  li {
+    position: relative;
+    font-size: calc(5px + 1.3dvw);
+    left: 5.5%;
+  }
+  .logo {
+    left: -1.5dvw;
+    top: 2.8dvw;
+    width: 17dvw;
   }
   .hero_img {
-    width: 40%;
+    width: 40dvw;
     height: 20%;
-    left: 56%;
+    left: 59dvw;
   }
   .theme-button {
-    left:18%
+    left: 18%;
   }
   .btn-start,
   .demo {
-    bottom: 29.5dvw;
+    width: 22%;
+    height: 8.5dvb;
+    bottom: 25.5dvw;
+    font-size: calc(5px + 1.3dvw);
     margin-right: 5%;
   }
   .features {
     bottom: 0;
   }
   .feature-item {
-    top: -29dvw;
-    width: 25%;
-    font-size: 1.5dvw;
-    margin-right: 5dvb;
+    top: -23dvw;
+    width: 28%;
+    font-size: 1.7dvw;
+    margin-right: 7dvb;
     margin-left: -3.5dvw;
   }
   .author-info {
-    font-size: 1.8dvw;
+    font-size: calc(1dvw + 1.3dvw);
     position: relative;
-    bottom: 5.7dvw;
-  }
-}
-
-
-@media screen and (min-width: 1280px) and (min-height: 800px) and (max-width: 1340px) {
-  span {
-    top: 6dvw;
-    font-size: 1.4vw;
-  }
-
-  h1 {
-    font-size: 10.2dvh;
-    top: 13.5dvb;
-    line-height: 8dvw;
-  }
-  p {
-    font-size: 3dvb;
-    width: 60%;
-    bottom: 30.5dvw;
-  }
-  .btn-start,
-  .demo {
-    bottom: 28.5dvw;
-  }
-
-  .feature-item {
-    width: 25%;
-    top: 4.8dvw;
-    font-size: 1.6dvw;
-  }
-  .author-info {
-    position: relative;
-    top: -0.8vw;
-    font-size: 1.6dvw;
-  }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1299px) and (min-height: 700px) and (max-height: 799px) {
-  p {
-    bottom: 31.5dvw;
-    font-size: 1.5dvw;
-  }
-  .btn-start,
-  .demo {
-    bottom: 30.2dvw;
-  }
-  .feature-item {
-    font-size: 1.4dvw;
-    margin-right: 5dvb;
-  }
-  .author-info {
-    font-size: 2dvw;
-    position: relative;
-    bottom: 3dvw;
-  }
-}
-
-@media screen and (min-width: 1366px) and (max-height: 768px) {
-  h1 {
-    top: 7dvw;
-  }
-  p {
-    bottom: 27.5dvw;
-    font-size: 1.6dvw;
-  }
-  .btn-start,
-  .demo {
-    bottom: 25.2dvw;
-  }
-  .features {
-    bottom: 23.5dvw;
-  }
-  .feature-item {
-    font-size: 1.4dvw;
-    margin-right: 9dvb;
-  }
-  .author-info {
-    font-size: 1.8dvw;
-    position: relative;
-    top: 3dvw;
-  }
-}
-
-@media screen and (min-width: 1440px) and (min-height: 900px) and (max-width: 1440px) {
-  span {
-    font-size: 1.2vw;
-  }
-
-  h1 {
-    font-size: 10dvh;
-    top: 10.5dvb;
-    line-height: 8dvw;
-  }
-  p {
-    font-size: 2.8dvb;
-    width: 60%;
-    bottom: 25.5dvw;
-  }
-  .btn-start,
-  .demo {
-    bottom: 24dvw;
-  }
-  .feature-item {
-    top: 9dvw;
-    font-size: 1.3dvw;
-    margin-right: 4dvw;
-  }
-  .author-info {
-    position: relative;
-    top: 5vw;
-    font-size: 1.5dvw;
+    bottom: -2.7dvw;
   }
 }
