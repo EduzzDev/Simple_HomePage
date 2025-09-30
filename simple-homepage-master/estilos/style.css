@@ -998,7 +998,7 @@ body.dark-theme {
 }
 
 /* Responsividade para desktops  */
-@media screen and (min-width: 1000px) and (min-height: 680px) {
+@media screen and (min-width: 1000px) and (min-height: 680px) { 
   h1,
   p,
   .btn-start,
@@ -1009,20 +1009,20 @@ body.dark-theme {
   }
   span {
     left: -0.9dvb;
-    font-size: calc(4px + 1.2dvw);
+    font-size: calc(2.2px + 1dvw);
     position: relative;
-    top: 6dvw;
+    top: 6.5dvw;
   }
   h1 {
-    font-size: calc(25px + 3.5dvw);
-    top: 6.5dvw;
+    font-size: calc(25px + 3dvw);
+    top: 7dvw;
     width: 40%;
     line-height: 8dvw;
   }
   p {
-    bottom: 33.5dvw;
+    bottom: 35dvw;
     font-weight: 600;
-    font-size: calc(8px + 1.2dvw);
+    font-size: calc(5px + 1.2dvw);
     width: 50%;
     line-height: 3dvw;
     word-spacing: 1px;
@@ -1052,9 +1052,9 @@ body.dark-theme {
   }
   .btn-start,
   .demo {
-    width: 18%;
-    height: 8.5dvb;
-    bottom: 31.5dvw;
+    width: 18dvw;
+    height: 5.5dvw;
+    bottom: 34.2dvw;
     font-size: calc(5px + 1.3dvw);
     margin-right: 5%;
   }
@@ -1066,15 +1066,19 @@ body.dark-theme {
     padding-right: 1dvw;
   }
   .feature-item {
-    top: -28.5dvw;
+    top: -31.5dvw;
     width: 28%;
-    font-size: 1.7dvw;
+    font-size: 1.5dvw;
     margin-right: 0.1dvb;
     margin-left: -3.5dvw;
   }
   .author-info {
-    font-size: calc(1dvw + 1.3dvw);
+    font-size: calc(4px + 1.5dvw);
     position: relative;
-    bottom: -4.2dvb;
+    bottom: 5.2dvb;
+  }
+  a{
+     font-size: calc(3px + 1dvw);
+     font-weight: 700;
   }
 }
