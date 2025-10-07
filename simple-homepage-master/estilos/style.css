@@ -1014,9 +1014,9 @@ body.dark-theme {
     top: 6.5dvw;
   }
   h1 {
-    font-size: calc(25px + 3.2dvw);
+    font-size: calc(25px + 3.5dvw);
     top: 7dvw;
-    width: 40%;
+    width: 36%;
     line-height: 7.8dvw;
     font-weight: 800;
   }
@@ -1055,11 +1055,11 @@ body.dark-theme {
   }
   .btn-start,
   .demo {
-    width: 15.5dvw;
-    height: 5dvw;
+    width: 18.5dvw;
+    height: 4.5dvw;
     bottom: 34.2dvw;
     font-size: calc(5px + 1.3dvw);
-    margin-right: 5%;
+    margin-right: 3.5%;
   }
   .features {
     bottom: 0;
