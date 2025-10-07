@@ -1025,8 +1025,10 @@ body.dark-theme {
     font-weight: 600;
     font-size: calc(5px + 1.1dvw);
     width: 50%;
-    line-height: 3dvw;
+    line-height: 2.8dvw;
     word-spacing: 1px;
+    color: #1F2937;
+
   }
   br {
     display: none;
