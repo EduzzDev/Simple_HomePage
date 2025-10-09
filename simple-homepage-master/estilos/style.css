@@ -150,10 +150,11 @@ p {
   left: 45px;
   margin-left: -28px;
   color: #494949;
+
 }
 .features {
   position: relative;
-  bottom: 50.8vh;
+  bottom: 50.8dvh;
   display: flex;
 }
 .done-img {
@@ -865,7 +866,7 @@ body.dark-theme {
     font-size: 4.2dvw;
     position: relative;
     width: 95%;
-    bottom: -9vw;
+    bottom: -9dvw;
     margin-left: -3%;
     line-height: 5dvw;
   }
@@ -885,7 +886,7 @@ body.dark-theme {
   .demo {
     position: relative;
     left: 5%;
-    bottom: -12vw;
+    bottom: -12dvw;
     margin-left: 4%;
     height: 9dvw;
     width: 35dvw;
@@ -998,7 +999,7 @@ body.dark-theme {
 }
 
 /* Responsividade para desktops  */
-@media screen and (min-width: 1000px) and (min-height: 680px) { 
+@media screen and (min-width: 1000px) and (min-height: 650px) { 
   h1,
   p,
   .btn-start,
@@ -1014,9 +1015,9 @@ body.dark-theme {
     top: 6.5dvw;
   }
   h1 {
-    font-size: calc(25px + 3.5dvw);
+    font-size: calc(27px + 3.5dvw);
     top: 7dvw;
-    width: 36%;
+    width: 38%;
     line-height: 7.8dvw;
     font-weight: 800;
   }
@@ -1055,10 +1056,10 @@ body.dark-theme {
   }
   .btn-start,
   .demo {
-    width: 18.5dvw;
+    width: 16.8dvw;
     height: 4.5dvw;
     bottom: 34.2dvw;
-    font-size: calc(5px + 1.3dvw);
+    font-size: calc(5px + 1.1dvw);
     margin-right: 3.5%;
   }
   .features {
@@ -1071,7 +1072,7 @@ body.dark-theme {
   .feature-item {
     top: -31.5dvw;
     width: 28%;
-    font-size: 1.5dvw;
+    font-size: calc(4px + 1dvw);
     margin-right: 0.1dvb;
     margin-left: -3.5dvw;
   }
