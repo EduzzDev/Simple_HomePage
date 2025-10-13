@@ -1,98 +1,100 @@
-# DevChallenges.io - Simple Homepage
+# 🌐 Simple Homepage - Alarado
 
-![Thumbnail for the Simple Homepage coding challenge](./thumbnail.jpg)
+Uma **landing page responsiva e moderna**, desenvolvida com **HTML, CSS e JavaScript puro**, inspirada no desafio ["Simple Homepage"](https://devchallenges.io/challenges) da DevChallenges.io.
 
-## Welcome! 👋
+O projeto foca em **acessibilidade, design responsivo** e **tema dinâmico (claro/escuro)** com armazenamento no `localStorage`.
 
-Welcome to this responsive web coding challenge.
+---
 
-[devChallenges.io](https://devchallenges.io/) challenges are designed to help you enhance your coding skills by building realistic projects.
+## ✨ Demonstração
 
-**Suggested Skills to practice: HTML, CSS and Vanilla JS**
+🖥️ [Acesse o site aqui](https://simple-homempage.vercel.app/) _(ou substitua pelo link do seu deploy)_
 
-## The challenge
+![Demonstração](./resources/hero-image-simple-homepage.png)
 
-Your task is to create a web page that closely resembles the provided design.
+---
 
-You can use any tools or resources you like to complete this challenge. Each challenge is designed to practice different skills, so be sure to check the challenge description for more information.
+## 🚀 Tecnologias Utilizadas
 
-If you need help or have any questions, feel free to [join our community](https://github.com/orgs/devchallenges-io/discussions) and ask for support.
+- **HTML5** – Estrutura semântica e acessível.
+- **CSS3** – Layout responsivo com media queries e uso de `clamp()` e `dvw`.
+- **JavaScript Vanilla (puro)** – Interações de tema e menu.
+- **Google Fonts** – Tipografia “Poppins”.
+- **LocalStorage API** – Armazena a preferência de tema do usuário.
 
-## Where to find everything
+---
 
-Your goal is to build the project using the provided design. You can find the designs in the challenge editor once you start the challenge or in the `/design` folder. Please note that the `/design` folder may not include all the designs you need, so be sure to check the editor for more details.
+## 🧠 Funcionalidades Principais
 
-The designs are in JPG format, so you'll need to use your best judgment for styles such as `font-size`, `padding`, and `margin`. Additionally, spacing guides are available for each challenge, but access to them requires a [Pro membership](https://devchallenges.io/pro). With a Pro membership, you can also download the Figma design files.
+✅ **Tema claro e escuro** com persistência entre sessões.  
+✅ **Menu responsivo** com alternância entre versão desktop e mobile.  
+✅ **Design adaptativo** para smartphones, tablets e monitores ultrawide.  
+✅ **Animação de destaque** nos links ativos.  
+✅ **Código organizado** e comentado para fácil manutenção.
 
-All the required assets can be found in the `/resources` folder. You may need to optimize the assets as necessary.
+---
 
-For more information about the challenge, access the challenge editor on [devChallenges.io](https://devchallenges.io/challenges-dashboard).
+## ⚙️ Estrutura do Projeto
 
-## Steps to Complete the Challenge on devChallenges.io
+```
+📁 projeto
+│
+├── 📄 index.html          # Estrutura principal da página
+├── 🎨 style.css           # Estilos e responsividade
+├── 📁 resources/          # Imagens, ícones e favicon
+└── 📄 README.md           # Documentação do projeto
+```
 
-- [ ] Start by visiting [devChallenges.io](https://devchallenges.io/), navigate to the challenge page, and begin the challenge.
-- [ ] Once you have started the challenge, you will have access to the editor where you can download the necessary resources, check colors, fonts, and more.
-- [ ] Download the starter/resources, and if you are a Pro user, you can also download the Figma file.
-- [ ] Initialize the project as a Git repository.
-- [ ] Review the design and analyze the different versions for desktop, tablet, and mobile.
-- [ ] Plan your approach to the project by identifying reusable CSS classes and structuring your HTML content.
-- [ ] Define the base styles for your project, including font-family, font-size, and other general content styles.
-- [ ] Begin adding styles from the top of the page and work your way down, ensuring that each section is visually appealing and matches the provided design.
-- [ ] Optimize and resize the required assets from the `/images` folder as necessary.
-- [ ] Test your project's responsiveness by previewing it on different devices and screen sizes.
-- [ ] Once you are satisfied with your implementation, deploy your project to a hosting platform such as GitHub Pages, Vercel, or Netlify.
-- [ ] Submit your solution on devchallenges.io and aim to pass the design comparison and performance tests.
-- [ ] Replace the default `README.md` file with a custom one that explains your project and reflects on your learning experience. You can use the provided `README-template.md` as a starting point.
-- [ ] Share your solution with the devChallenges.io community by tweeting [@devchallengesio](https://twitter.com/devchallengesio) and mentioning the repository and live URLs in your tweet. You can also share your solution on other social channels or write a blog post about your experience.
-- [ ] Seek feedback from the community by using the provided templates or asking specific questions about your implementation.
+---
 
-Good luck and enjoy building your project! 🚀
+## 🧩 Como Executar Localmente
 
-## Deploying your project
+1. **Clone o repositório:**
 
-Our recommended hosting options include:
+   ```bash
+   git clone https://github.com/EduzzDev/Simple-Homepage.git
+   ```
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+2. **Entre na pasta do projeto:**
 
-You can choose any of these solutions or explore other trusted providers. For more information, please refer to our guide on [free hosting platforms](https://devchallenges.io/learn/1-fundamentals/free-hosting-for-web-projects).
+   ```bash
+   cd Simple-Homepage
+   ```
 
-## Create your own `README.md`
+3. **Abra o arquivo `index.html`:**
+   - Clique duas vezes sobre o arquivo, ou
+   - Execute com um servidor local:
+     ```bash
+     npx serve
+     ```
+     (isso abrirá no navegador em `http://localhost:3000`)
 
-To use the Readme template, follow these steps:
+---
 
-1. Open the `README-template.md` file in your text editor.
-2. Replace the placeholder content with your own project information.
-3. Customize the sections and headings to fit your project's needs.
-4. Add a detailed description of your project, including its purpose and features.
-5. Reflect on your learning experience and any challenges you encountered during development.
-6. Delete the original `README.md` file.
-7. Rename the `README-template.md` file to `README.md`.
-8. Save the changes and commit the updated `README.md` file to your repository.
+## 📱 Responsividade
 
-By following these instructions, you can create a customized `README.md` file that effectively communicates your project to others.
+O layout foi testado e otimizado para:
 
-## More guides
+- Smartphones (a partir de **280px** de largura)
+- Tablets (até **999px**)
+- Desktops e telas grandes (a partir de **1000px**)
 
-Don't forget to check out the [devChallenges Curriculum](https://devchallenges.io/learn), which covers basic to advanced topics that are essential for your web development journey.
+---
 
-## Sharing your solution
+## 🧾 Licença
 
-There are several platforms where you can share your solution:
+Este projeto é distribuído sob a **licença MIT**.  
+Sinta-se livre para usar, modificar e compartilhar!
 
-1.  Tweet [@devchallengesio](https://x.com/devchallengesio) and mention **@devchallengesio**, including the repository and live URLs in your tweet. We would love to see what you have built and help spread the word.
-2.  Share your solution on other social channels such as LinkedIn and tag [devchallenges](https://www.linkedin.com/company/devchallenges).
-3.  Write a blog post about your experience building the project. Documenting your workflow, technical choices, and explaining your code is an excellent way to reinforce your learning. Popular platforms for writing include [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+---
 
-We provide templates to help you share your solution once you have submitted it on the platform. Feel free to edit them and include specific questions when seeking feedback.
+## 👨‍💻 Autor
 
-The more specific your questions are, the more likely it is that another community member will provide feedback.
+Desenvolvido por **Eduardo Felipe**  
+📧 [eduzzfelipe21@gmail.com](mailto:eduzzfelipe21@gmail.com)  
+💼 [Perfil no GitHub](https://github.com/EduzzDev)  
+🏆 Desafio original por [DevChallenges.io](https://www.devchallenges.io?ref=challenge)
 
-## Feedback
+---
 
-We value feedback and are always looking to improve our challenges and platform. If you have any suggestions or comments, please email us at hi\[at]devchallenges\[dot]io.
-
-This challenge is completely free. Please share it with anyone who would find it useful for practice.
-
-**Enjoy building!** 🚀
+> _"Design não é apenas o que se vê, mas como se sente e funciona." – Steve Jobs_
