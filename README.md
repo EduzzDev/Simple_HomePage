@@ -8,9 +8,8 @@ O projeto foca em **acessibilidade, design responsivo** e **tema dinâmico (clar
 
 ## ✨ Demonstração
 
-🖥️ [Acesse o site aqui](https://simple-homempage.vercel.app/) _(ou substitua pelo link do seu deploy)_
-
-![Demonstração](./resources/hero-image-simple-homepage.png)
+🖥️ [Acesse o site aqui](https://simple-home-page-tau.vercel.app/) 
+![Demonstração](./thumbnail.jpg)
 
 ---
 

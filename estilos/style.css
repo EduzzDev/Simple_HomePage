@@ -1,121 +1,118 @@
 * {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   box-sizing: border-box;
 }
-
 .menu {
   display: flex;
-  gap: 45px;
+  gap: 8dvh;
   padding: 0;
-  margin-left: 8%;
+  margin-left: 25dvh;
   justify-content: center;
   cursor: pointer;
 }
-
+body,
 main {
   position: relative;
   z-index: 1;
 }
 body {
-  position: relative;
   background-color: #f2f9fe;
-  z-index: 1;
   overflow-x: hidden;
 }
-li,
-a {
+a,
+li {
   text-decoration: none;
   list-style: none;
   color: #111729;
 }
 li {
-  font-size: 16px;
+  font-size: clamp(1rem , 1.5dvw , 1rem);
   font-weight: 600;
   position: relative;
-  top: 2px;
+  top: 0.2dvw;
 }
+.active,
 li:hover a:hover {
   color: #2a4dd0;
   box-shadow: inset 0 -2px 0 0 #2a4dd0;
-  padding-bottom: 6px;
-  font-size: 15px;
+  padding-bottom: 0.5dvw;
+  font-size: clamp(1rem , 1.5dvw, 1rem);
 }
-.active {
-  color: #2a4dd0;
-  box-shadow: inset 0 -2px 0 0 #2a4dd0;
-  padding-bottom: 6px;
-  font-size: 15px;
-}
-
 .logo {
   position: relative;
-  top: 20px;
-  margin-left: 65px;
+  top: 2dvw;
+  margin-left: 5dvw;
 }
-
 .theme-button {
   width: 60px;
   height: 29px;
   text-decoration: none;
   background-color: #111729;
-  border-radius: 50% / 100%;
+  border-radius: 50%/100%;
   cursor: pointer;
   position: relative;
-  left: 24%;
+  left: calc(20% - 6dvb);
   bottom: 4px;
   border: 2px solid #111729;
 }
 #sun {
   background-color: #f2f9fe;
   border-radius: 50%;
-  width: 24px;
-  position: relative;
   left: 15px;
-  height: 25px;
   padding: 2px;
   bottom: 29px;
 }
-#moon {
-  position: relative;
-  right: 16px;
+#moon,
+#sun {
   width: 24px;
+  position: relative;
   height: 25px;
+}
+#moon {
+  right: 16px;
 }
 span {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: clamp(0.8rem, 1dvw, 1rem);
   font-weight: 600;
-  color: #223344;
-  position: relative;
+  color: #234;
   margin-left: 65px;
-  top: 5dvw;
+  top: calc(1dvw + 10dvb);;
+}
+h1,
+span {
+  position: relative;
 }
 h1 {
-  font-size: 5dvw;
+  font-size: clamp(3.56rem, 2dvw, 3.8rem);
   font-weight: 800;
   color: #111729;
-  position: relative;
   left: 65px;
-  top: 5.5dvw;
-  line-height: 90px;
+  top: 13.5dvh;
+  line-height: 88px;
 }
 .hero_img {
+  display: flex;
   position: relative;
-  left: 55%;
-  width: 538px;
-  max-width: 100%;
-  bottom: 18dvw;
+  left: 58%;
+  width: 38vw;
+  height: 34dvw;
+  bottom: 14dvw;
 }
 p {
-  font-size: 17px;
-  font-weight: 600;
-  color: #223344;
-  position: relative;
+  display: flex;
+  font-size: clamp(1rem, 1dvw, 1rem);
+  color: #234;
   left: 65px;
-  bottom: 28dvw;
+  bottom: calc(24dvw + 1dvh);
   width: 100%;
   line-height: 25px;
+}
+.btn-start,
+p {
+  font-weight: 600;
+  position: relative;
 }
 .btn-start {
   width: 170px;
@@ -124,21 +121,20 @@ p {
   color: #fff;
   border: none;
   border-radius: 15px;
-  font-size: 16px;
-  font-weight: 600;
   cursor: pointer;
-  position: relative;
   left: 60px;
-  bottom: 27dvw;
   letter-spacing: 1px;
+}
+.btn-start,
+.demo {
+  font-size: clamp(1rem, 1dvw, 1rem);
+  bottom: calc(22dvw + 3dvb);
 }
 .demo {
   color: #2947b6;
-  font-size: 16px;
   font-weight: 600;
   position: relative;
   left: 85px;
-  bottom: 27dvw;
   padding-bottom: 8px;
   box-shadow: inset 0 -2px 0 0 #2a4dd0;
 }
@@ -149,12 +145,12 @@ p {
   height: 100px;
   left: 45px;
   margin-left: -28px;
+  top: 9dvb;
   color: #494949;
-
 }
 .features {
   position: relative;
-  bottom: 50.8dvh;
+  bottom: calc(19dvw + 15dvb);
   display: flex;
 }
 .done-img {
@@ -172,46 +168,52 @@ p {
   background-color: #111729;
 }
 .closer-menu {
-  display: none;
   text-decoration: none;
   background-color: transparent;
   border: none;
-  position: relative;
-  z-index: 10;
+  z-index: 4;
   bottom: 87dvw;
 }
-#img-menu {
+#img-menu,
+.closer-menu {
+  display: none;
   position: relative;
+}
+#img-menu {
   width: 32px;
   height: 32px;
-  display: none;
 }
-
-/* Versão escura */
+.author-info {
+  font-size: clamp(1.5rem, 1dvw, 2rem);
+  position: relative;
+  top: 20px;
+}
 body.dark-theme {
   background-color: #111729;
   color: #f2f9fe;
 }
 
-/* Responsividade mobile*/
-@media screen and (max-width: 430px) and (min-height: 900px) {
+@media screen and (min-width: 250px) and (max-width: 790px) {
   .logo {
-    width: 40dvw;
-    position: relative;
+    width: 20dvh;
     right: 8dvb;
     margin-left: 20dvw;
     margin-right: -10%;
     top: 18px;
   }
-  .hero_img {
+  .hero_img,
+  .logo {
     position: relative;
-    bottom: 52dvw;
+  }
+  .hero_img {
+    bottom: 50dvw;
     left: -1%;
     width: 100%;
+    height: 100%;
   }
   .feature-item {
-    font-size: 14px;
-    margin-left: 5%;
+    font-size: clamp(2rem, 1dvw, 2rem);
+    position: relative;
   }
   h1 {
     font-size: 13dvw;
@@ -219,140 +221,24 @@ body.dark-theme {
     left: 7%;
   }
   p {
-    font-size: 6dvw;
-    position: relative;
-    width: 90%;
-    bottom: -4vw;
-    margin-left: -10%;
+    font-size: clamp(3dvh, 1dvw, 1.2rem);
+    line-height: 2.8dvh;
+    width: 100%;
+    bottom: -8.5dvw;
+    margin-left: calc(8.5dvw - 9.5dvb);
+    left: 7dvh;
   }
+  p,
   span {
     position: relative;
-    margin-left: 6%;
-    top: 92dvw;
-  }
-  menu,
-  h1 {
-    position: relative;
-    top: 92vw;
-    margin-left: -3%;
-  }
-  .btn-start,
-  .demo {
-    position: relative;
-    left: 5%;
-    bottom: -8vw;
-    margin-left: 4%;
-  }
-  .btn-start {
-    position: relative;
-    left: 1%;
-  }
-  .menu {
-    display: none;
-    position: relative;
-    z-index: 20;
-  }
-  li,
-  nav {
-    font-size: 28px;
-    position: relative;
-    left: 10dvw;
-    top: 17dvw;
-    cursor: none;
-  }
-  a {
-    color: rgb(17, 23, 41);
-  }
-  .theme-button {
-    display: none;
-    position: relative;
-    top: 15vw;
-    left: 10vw;
-  }
-  .feature-item {
-    position: relative;
-    padding: 1px;
-    top: 118vw;
-    margin-left: -14dvw;
-    font-size: 4.2vw;
-    margin-right: 20%;
-  }
-  .done-img {
-    position: relative;
-    padding-right: 1dvw;
-  }
-  .menu-button {
-    display: flex;
-    position: relative;
-    left: 46dvw;
-    text-decoration: none;
-    border: none;
-    background-color: #f2f9fe;
-    bottom: 0.5dvw;
-    display: flex;
-    z-index: 2;
-  }
-  .author-info {
-    font-size: 18px;
-    top: 35dvw;
-    position: relative;
-  }
-  #img-menu {
-    display: flex;
-    bottom: 3dvw;
-    left: 40.5dvw;
-    width: 10dvw;
-  }
-  .closer-menu {
-    left: 87vw;
-  }
-  #img-close {
-    width: 10vw;
-    height: 80px;
-    display: block;
-  }
-  br {
-    display: none;
-  }
-}
-@media screen and (min-width: 350px) and (max-width: 390px) {
-  .logo {
-    width: 40dvw;
-    position: relative;
-    right: 8dvb;
-    margin-left: 20dvw;
-    margin-right: -10%;
-    top: 18px;
-  }
-  .hero_img {
-    position: relative;
-    bottom: 48dvw;
-    left: -1%;
-    width: 100%;
-  }
-  .feature-item {
-    font-size: 14px;
-    margin-left: 5%;
-  }
-  h1 {
-    font-size: 13dvw;
-    line-height: 16vw;
-    left: 7%;
-  }
-  p {
-    font-size: 120%;
-    position: relative;
-    width: 100%;
-    bottom: -5vw;
-    margin-left: -14.5dvw;
   }
   span {
-    position: relative;
-    margin-left: 6%;
+    margin-left: 5.5%;
     top: 95dvw;
+    font-size: clamp(2.4dvh, 1dvw, 1rem);
   }
-  menu,
-  h1 {
+  h1,
+  menu {
     position: relative;
     top: 94vw;
     margin-left: -3%;
@@ -361,728 +247,88 @@ body.dark-theme {
   .demo {
     position: relative;
     left: 1%;
-    bottom: -10vw;
-    margin-left: 3%;
-  }
-  .btn-start {
-    position: relative;
-    left: -0.6%;
-  }
-  .menu {
-    display: none;
-    position: relative;
-    z-index: 20;
-  }
-  li,
-  nav {
-    font-size: 24px;
-    position: relative;
-    left: 10dvw;
-    top: 17dvw;
-  }
-  a {
-    color: rgb(17, 23, 41);
-  }
-  .theme-button {
-    display: none;
-    position: relative;
-    top: 15vw;
-    left: 10vw;
-  }
-  .feature-item {
-    position: relative;
-    padding-top: 6.2dvw;
-    top: 52dvb;
-    margin-left: -20dvw;
-    font-size: 4.5dvw;
-    margin-right: 25%;
-  }
-  .done-img {
-    position: relative;
-    padding-right: 1dvw;
-  }
-  .menu-button {
-    display: flex;
-    position: relative;
-    left: 49dvw;
-    text-decoration: none;
-    border: none;
-    background-color: transparent;
-    z-index: 4;
-    height: 100%;
-  }
-  .author-info {
-    font-size: 18px;
-    padding-top: 16dvw;
-    top: 18dvw;
-    position: relative;
-  }
-  #img-menu {
-    display: flex;
-    left: 35dvw;
-  }
-  .closer-menu {
-    left: 87vw;
-    bottom: 24em;
-  }
-  #img-close {
-    width: 10vw;
-    height: 80px;
-    display: block;
-  }
-  br {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 420px) and (max-width: 679px) and (max-height: 899px) {
-  .logo {
-    width: 40dvw;
-    position: relative;
-    right: 8dvb;
-    margin-left: 20dvw;
-    margin-right: -10%;
-    top: 18px;
-  }
-  .hero_img {
-    position: relative;
-    bottom: 52dvw;
-    left: 1%;
-    width: 98%;
-  }
-  .feature-item {
-    font-size: 14px;
-    margin-left: 5%;
-  }
-  h1 {
-    font-size: 13dvw;
-    line-height: 16vw;
-    left: 7%;
-  }
-  p {
-    font-size: 4dvb;
-    position: relative;
-    width: 90%;
-    bottom: -4vw;
-    margin-left: -6dvw;
-  }
-  span {
-    position: relative;
-    margin-left: 6%;
-    top: 92dvw;
-  }
-  menu,
-  h1 {
-    position: relative;
-    top: 92vw;
-    margin-left: -3%;
-  }
-  .btn-start,
-  .demo {
-    position: relative;
-    left: 5%;
-    bottom: -7dvb;
-    margin-left: 4%;
-  }
-  .btn-start {
-    position: relative;
-    left: 1%;
-  }
-  .menu {
-    display: none;
-    position: relative;
-    z-index: 20;
-  }
-  li,
-  nav {
-    font-size: 28px;
-    position: relative;
-    left: 10dvw;
-    top: 17dvw;
-    cursor: none;
-  }
-  a {
-    color: rgb(17, 23, 41);
-  }
-  .theme-button {
-    display: none;
-    position: relative;
-    top: 15vw;
-    left: 10vw;
-  }
-  .feature-item {
-    position: relative;
-    padding: 1px;
-    top: 58dvb;
-    margin-left: -7dvb;
-    font-size: 3.2dvb;
-    margin-right: 20%;
-  }
-  .done-img {
-    position: relative;
-    padding-right: 1dvw;
-  }
-  .menu-button {
-    display: flex;
-    position: relative;
-    left: 46dvw;
-    text-decoration: none;
-    border: none;
-    background-color: transparent;
-    bottom: 0.5dvw;
-    display: flex;
-    z-index: 2;
-  }
-  .author-info {
-    font-size: 3dvb;
-    top: 32dvb;
-    position: relative;
-  }
-  #img-menu {
-    display: flex;
-    bottom: 3dvw;
-    left: 40.5dvw;
-    width: 10dvw;
-  }
-  .closer-menu {
-    left: 87vw;
-  }
-  #img-close {
-    width: 10vw;
-    height: 80px;
-    display: block;
-  }
-  br {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 280px) and (max-width: 427px) {
-  .logo {
-    width: 45dvw;
-    position: relative;
-    right: 8dvb;
-    margin-left: 20dvw;
-    margin-right: -10%;
-    top: 18px;
-  }
-  .hero_img {
-    position: relative;
-    bottom: 44dvw;
-    left: -1%;
-    width: 100%;
-  }
-  .feature-item {
-    font-size: 14px;
-    margin-left: 5%;
-  }
-  h1 {
-    font-size: 13dvw;
-    line-height: 16vw;
-    left: 7%;
-  }
-  p {
-    font-size: 120%;
-    position: relative;
-    width: 100%;
-    bottom: -10vw;
-    margin-left: -14.5dvw;
-  }
-  span {
-    position: relative;
-    margin-left: 6%;
-    top: 100dvw;
-  }
-  menu,
-  h1 {
-    position: relative;
-    top: 99vw;
-    margin-left: -3%;
-    position: relative;
-  }
-  .btn-start,
-  .demo {
-    position: relative;
-    left: 1%;
-    bottom: -15vw;
-    margin-left: 3%;
-  }
-  .btn-start {
-    position: relative;
-    left: -0.6%;
-  }
-  .menu {
-    display: none;
-    position: relative;
-    z-index: 20;
-  }
-  li,
-  nav {
-    font-size: 24px;
-    position: relative;
-    left: 10dvw;
-    top: 17dvw;
-  }
-  a {
-    color: rgb(17, 23, 41);
-  }
-  .theme-button {
-    display: none;
-    position: relative;
-    top: 15vw;
-    left: 10vw;
-  }
-  .feature-item {
-    position: relative;
-    padding-top: 6.2dvw;
-    top: 55dvb;
-    margin-left: -20dvw;
-    font-size: 4.5dvw;
-    margin-right: 25%;
-  }
-  .done-img {
-    position: relative;
-    padding-right: 1dvw;
-  }
-  .menu-button {
-    display: flex;
-    position: relative;
-    left: 49dvw;
-    top: 0.1dvb;
-    text-decoration: none;
-    border: none;
-    background-color: transparent;
-    z-index: 4;
-  }
-  .author-info {
-    font-size: 18px;
-    padding-top: 16dvw;
-    top: 20dvw;
-    position: relative;
-  }
-  #img-menu {
-    display: block;
-    left: 35dvw;
-    bottom: 3.2dvb;
-  }
-  .closer-menu {
-    left: 87vw;
-    bottom: 25em;
-  }
-  #img-close {
-    width: 10vw;
-    height: 80px;
-    display: block;
-  }
-  br {
-    display: none;
-  }
-}
-
-/* Responsividade para tablets  */
-
-@media screen and (min-width: 600px) and (max-width: 999px) {
-  .logo {
-    width: 35dvw;
-    position: relative;
-    right: 8dvb;
-    margin-left: 20dvw;
-    margin-right: -10%;
-    top: 18px;
-  }
-  .hero_img {
-    position: relative;
-    bottom: 44dvw;
-    left: 8%;
-    width: 80%;
-  }
-  h1 {
-    font-size: 13dvw;
-    line-height: 16vw;
-    left: 7%;
-  }
-  p {
-    font-size: 4.5dvw;
-    position: relative;
-    width: 95%;
-    bottom: -8dvw;
-    margin-left: -6dvw;
-    line-height: 5dvw;
-  }
-  span {
-    position: relative;
-    margin-left: 6%;
-    top: 80dvw;
-    font-size: 16px;
-  }
-  menu,
-  h1 {
-    position: relative;
-    top: 79vw;
-    margin-left: -3%;
-  }
-  .btn-start,
-  .demo {
-    position: relative;
-    left: 5%;
-    bottom: -12vw;
-    margin-left: 4%;
-    height: 12dvw;
-    width: 38dvw;
-    font-size: calc(2px + 3dvw);
-  }
-  .btn-start {
-    position: relative;
-    left: 1%;
-  }
-  .menu {
-    display: none;
-    position: relative;
-    z-index: 20;
-  }
-  li,
-  nav {
-    font-size: 48px;
-    position: relative;
-    left: 10dvw;
-    top: 16dvw;
-    cursor: pointer;
-    line-height: 76px;
-  }
-  .active {
-    color: #2a4dd0;
-    box-shadow: inset 0 -4px 0 0 #2a4dd0;
-    padding-bottom: 6px;
-    font-size: 5dvw;
-  }
-  li:hover a:hover {
-    color: #2a4dd0;
-    box-shadow: inset 0 -4px 0 0 #2a4dd0;
-    padding-bottom: 6px;
-    font-size: 5vw;
-  }
-  a {
-    color: rgb(17, 23, 41);
-  }
-  .theme-button {
-    display: none;
-    position: relative;
-    top: 15vw;
-    left: 10vw;
-    width: 124px;
-    height: 51px;
-  }
-  #moon {
-    position: relative;
-    right: 4px;
-    width: 44px !important;
-    height: 56px;
-    bottom: 4px;
-  }
-  #sun {
-    width: 44px;
-    height: 44px;
-    position: relative;
-    bottom: 10px;
-    left: 8px;
-  }
-  .feature-item {
-    width: 50%;
-    position: relative;
-    padding: 1px;
-    top: 60dvb;
-    margin-left: -8.2dvw;
-    font-size: calc(12px + 1.5dvw);
-    margin-right: 10dvw;
-    line-height: 1;
-  }
-  .done-img {
-    position: relative;
-    padding-right: 1dvw;
-  }
-  .menu-button {
-    display: flex;
-    position: relative;
-    left: 46dvw;
-    text-decoration: none;
-    border: none;
-    background-color: transparent;
-    bottom: 4dvw;
-    display: flex;
-    z-index: 2;
-    height: 100%;
-  }
-  .author-info {
-    font-size: calc(12px + 1.5dvw);
-    top: 38dvw;
-    width: 90%;
-    position: relative;
-  }
-  #img-menu {
-    display: flex;
-    bottom: 45%;
-    left: 40.5dvw;
-    width: 58px;
-    height: 48px;
-  }
-  .closer-menu {
-    left: 85dvw;
-    bottom: 85dvw;
-  }
-  #img-close {
-    width: 80px;
-    height: 80px;
-  }
-  br {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 900px) and (min-height: 1400px) {
-  .logo {
-    width: 35dvw;
-    position: relative;
-    right: 8dvb;
-    margin-left: 20dvw;
-    margin-right: -10%;
-    top: 18px;
-  }
-  .hero_img {
-    position: relative;
-    bottom: 44dvw;
-    left: 8%;
-    width: 80%;
-  }
-  .feature-item {
-    font-size: 14px;
-    margin-left: 5%;
-  }
-  h1 {
-    font-size: 13dvw;
-    line-height: 16vw;
-    left: 7%;
-  }
-  p {
-    font-size: 4.2dvw;
-    position: relative;
-    width: 95%;
-    bottom: -9dvw;
-    margin-left: -3%;
-    line-height: 5dvw;
-  }
-  span {
-    position: relative;
-    margin-left: 6%;
-    top: 80dvw;
-    font-size: 18px;
-  }
-  menu,
-  h1 {
-    position: relative;
-    top: 79vw;
-    margin-left: -3%;
-  }
-  .btn-start,
-  .demo {
-    position: relative;
-    left: 5%;
     bottom: -12dvw;
-    margin-left: 4%;
-    height: 9dvw;
-    width: 35dvw;
-    font-size: 26px;
+    margin-left: 3%;
+    width: 50dvw;
+    height:8.5dvh;
+    font-size: clamp(2.5vh, 1dvw, 1rem);
   }
   .btn-start {
+    left: -0.6%;
+  }
+  .btn-start,
+  .menu {
     position: relative;
-    left: 1%;
   }
   .menu {
     display: none;
-    position: relative;
-    z-index: 20;
+    z-index: 5;
   }
   li,
   nav {
-    font-size: 48px;
+    font-size: clamp(3.5dvh, 2dvw, 1.5rem);
     position: relative;
     left: 10dvw;
-    top: 16dvw;
-    cursor: pointer;
-    line-height: 76px;
-  }
-  .active {
-    color: #2a4dd0;
-    box-shadow: inset 0 -4px 0 0 #2a4dd0;
-    padding-bottom: 6px;
-    font-size: 5dvw;
-  }
-  li:hover a:hover {
-    color: #2a4dd0;
-    box-shadow: inset 0 -4px 0 0 #2a4dd0;
-    padding-bottom: 6px;
-    font-size: 5vw;
+    top: 17dvw;
   }
   a {
-    color: rgb(17, 23, 41);
+    color: #111729;
   }
   .theme-button {
     display: none;
     position: relative;
     top: 15vw;
     left: 10vw;
-    width: 124px;
-    height: 51px;
-  }
-  #moon {
-    position: relative;
-    right: 4px;
-    width: 44px !important;
-    height: 56px;
-    bottom: 4px;
-  }
-  #sun {
-    width: 44px;
-    height: 44px;
-    position: relative;
-    bottom: 10px;
-    left: 8px;
   }
   .feature-item {
     position: relative;
-    padding: 1px;
-    top: 59dvb;
-    margin-left: -4dvw;
-    font-size: 3vw;
-    margin-right: 10%;
-    line-height: 1;
+    padding-top: 6.2dvw;
+    top: 56.5dvw;
+    margin-left: -19dvw;
+    font-size: clamp(1.2rem, 1.2dvw, 1.2rem);
+    margin-right: 13dvb;
+    left: 8.9dvb;
+    width: 55%;
   }
   .done-img {
     position: relative;
     padding-right: 1dvw;
-    width: 20%;
   }
   .menu-button {
     display: flex;
     position: relative;
-    left: 46dvw;
+    left: 29dvw;
     text-decoration: none;
     border: none;
     background-color: transparent;
-    bottom: 0.2dvw;
-    display: flex;
-    z-index: 2;
+    z-index: 3;
+    width: 50%;
     height: 100%;
   }
   .author-info {
-    font-size: 26px;
-    top: 42dvw;
+    font-size: 18px;
+    padding-top: 16dvw;
+    top: 38dvw;
     position: relative;
   }
   #img-menu {
     display: flex;
-    bottom: 3.5dvw;
-    left: 40.5dvw;
-    width: 58px;
-    height: 48px;
+    left: 55dvw;
   }
   .closer-menu {
-    left: 85dvw;
-    bottom: 65dvw;
+    left: 80dvw;
+    bottom: 47dvh;
   }
   #img-close {
-    width: 80px;
-    height: 80px;
-  }
-  br {
-    display: none;
-  }
-}
-
-/* Responsividade para desktops  */
-@media screen and (min-width: 1000px) and (min-height: 650px) { 
-  h1,
-  p,
-  .btn-start,
-  .demo,
-  .feature-item,
-  .author-info {
-    left: 4%;
-  }
-  span {
-    left: -0.9dvb;
-    font-size: calc(2.2px + 1dvw);
-    position: relative;
-    top: 6.5dvw;
-  }
-  h1 {
-    font-size: calc(27px + 3.5dvw);
-    top: 7dvw;
-    width: 38%;
-    line-height: 7.8dvw;
-    font-weight: 800;
-  }
-  p {
-    bottom: 35dvw;
-    font-weight: 600;
-    font-size: calc(5px + 1.1dvw);
-    width: 50%;
-    line-height: 2.8dvw;
-    word-spacing: 1px;
-    color: #1F2937;
-
-  }
-  br {
-    display: none;
-  }
-  li {
-    position: relative;
-    font-size: calc(5px + 1.3dvw);
-    top: -1dvw;
-    left: 5.5%;
-  }
-  .logo {
-    left: -1.5dvw;
-    top: 1.5dvw;
     width: 15dvw;
+    height: 80px;
+    display: block;
   }
-  .hero_img {
-    width: 48dvw;
-    height: 20%;
-    left: 50dvw;
+  .menu {
+    left: -8.8dvb;
+    top: 25.5dvw;
   }
-  .theme-button {
-    left: 18%;
-    top: -1dvw;
-  }
-  .btn-start,
-  .demo {
-    width: 16.8dvw;
-    height: 4.5dvw;
-    bottom: 34.2dvw;
-    font-size: calc(5px + 1.1dvw);
-    margin-right: 3.5%;
-  }
-  .features {
-    bottom: 0;
-  }
-  .done-img {
-    width: 12%;
-    padding-right: 1dvw;
-  }
-  .feature-item {
-    top: -31.5dvw;
-    width: 28%;
-    font-size: calc(4px + 1dvw);
-    margin-right: 0.1dvb;
-    margin-left: -3.5dvw;
-  }
-  .author-info {
-    font-size: calc(4px + 1.5dvw);
-    position: relative;
-    bottom: 5.2dvb;
-  }
-  a{
-     font-size: calc(3px + 1dvw);
-     font-weight: 700;
+  br {
+    display: none;
   }
 }

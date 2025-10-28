@@ -41,7 +41,12 @@
   <body>
     <header>
       <!-- Menu da página(PC), menu da página(Mobile), sua logo e botão de fechamento do menu(mobile)  -->
-      <img src="resources/logo-light.svg" class="logo" alt="Logo" />
+      <img
+        src="resources/logo-light.svg"
+        loading="lazy"
+        class="logo"
+        alt="Logo"
+      />
 
       <nav class="menu">
         <li><a href="#about-us" onclick="select(this)">About us</a></li>
@@ -61,6 +66,7 @@
       <button onclick="menu()" class="menu-button">
         <img
           src="resources/hamburger-button.svg"
+          loading="lazy"
           id="img-menu"
           alt="botão menu"
         />
@@ -68,6 +74,7 @@
       <button type="button" onclick="closerMenu()" class="closer-menu">
         <img
           src="resources/close-button.svg"
+          loading="lazy"
           id="img-close"
           alt="botão fechar menu"
         />
@@ -106,6 +113,7 @@
             class="done-img"
             src="resources/Done_ring_round_fill.svg"
             alt="Done ring"
+            loading="lazy"
           />No credit card required
         </li>
         <li class="feature-item">
@@ -113,6 +121,7 @@
             class="done-img"
             src="resources/Done_ring_round_fill.svg"
             alt="Done ring"
+            loading="lazy"
           />No software to install
         </li>
       </ul>
@@ -168,15 +177,18 @@
         menuButton.style.display = "block";
         menuButton.style.width = "80%";
         menuButton.style.height = "100%";
-        menuButton.style.zIndex = "10";
         menuButton.style.top = "0";
         imgMenu.style.display = "none";
         menu.style.display = "flex";
         menu.style.flexDirection = "column";
         menu.style.alignItems = "center";
         menu.style.justifyContent = "center";
-        menuButton.style.backgroundColor = "#f2f9fe";
 
+        if (document.body.classList.contains("dark-theme")) {
+          menuButton.style.backgroundColor = "#111729";
+        } else {
+          menuButton.style.backgroundColor = "#f2f9fe";
+        }
         main.style.bottom = "350px";
         footer.style.bottom = "340px";
         footer.style.position = "relative";
