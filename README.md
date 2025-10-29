@@ -39,7 +39,7 @@ O projeto foca em **acessibilidade, design responsivo** e **tema dinâmico (clar
 📁 projeto
 │
 ├── 📄 index.html          # Estrutura principal da página
-├── 🎨 style.css           # Estilos e responsividade
+├── 🎨 estilos/style.css   # Estilos e responsividade
 ├── 📁 resources/          # Imagens, ícones e favicon
 └── 📄 README.md           # Documentação do projeto
 ```
