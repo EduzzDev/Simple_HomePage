@@ -8,7 +8,7 @@ O projeto foca em **acessibilidade, design responsivo** e **tema dinâmico (clar
 
 ## ✨ Demonstração
 
-🖥️ [Acesse o site aqui](https://simple-home-page-tau.vercel.app/) 
+🖥️ [Acesse o site aqui](https://simplehomepage-seven.vercel.app/) 
 ![Demonstração](./thumbnail.jpg)
 
 ---
